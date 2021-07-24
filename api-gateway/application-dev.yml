@@ -7,11 +7,6 @@ eureka:
 spring:
   application:
     name: api-gateway
-  config:
-    import: optional:configserver:http://localhost:8888/
-  cloud:
-    config:
-      profile: dev
     gateway:
       discovery:
         locator:

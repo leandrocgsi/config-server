@@ -23,11 +23,6 @@ resilience4j:
 spring:
   application:
     name: book-service
-  config:
-    import: optional:configserver:http://localhost:8888/
-  cloud:
-    config:
-      profile: dev
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/book_service?useTimezone=true&serverTimezone=UTC
