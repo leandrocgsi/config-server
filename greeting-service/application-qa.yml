@@ -1,14 +1,12 @@
-server:
-  port: 8080
 spring:
   application:
     name: greeting-service
-greeting-service:
-  greeting: "Olá"
-  default-value: "Mundo"
 management:
   endpoints:
     web:
       exposure:
         include:
         - '*'
+greeting-service:
+  greeting: "Olá"
+  default-value: "Mundo"
